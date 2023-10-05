@@ -1,0 +1,15 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+}
+
+.poke-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.poke-detail img {
+  width: 25rem;
+}

@@ -4,7 +4,7 @@ import PokeCard from "../../components/PokeCard/PokeCard";
 import { Button, ButtonGroup } from "react-bootstrap";
 
 export default function Home() {
-  const [pokemonPerPage, serPokemonPerPage] = useState(8); // => limit y config de página
+  const [pokemonPerPage, serPokemonPerPage] = useState(12); // => limit y config de página
   const [pokemon, setPokemon] = useState([]);
   const [offset, setOffset] = useState(0);
 
@@ -44,12 +44,12 @@ export default function Home() {
         {pokemon.map((pokemon) => (
           <PokeCard pokemon={pokemon} />
         ))}
-      </div>
       <ButtonGroup className="m-2  ">
         <Button onClick={(e) => prevPageHandler(e)}>◀ Anterior</Button>
         {/* <Button>Middle</Button> */}
         <Button onClick={(e) => nextPageHandler(e)}>Siguiente ▶</Button>
       </ButtonGroup>
+      </div>
     </div>
   );
 }
