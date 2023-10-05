@@ -1,0 +1,11 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.poke-img {
+  height: 10em;
+}
